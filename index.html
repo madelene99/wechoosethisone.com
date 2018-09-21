@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+
+
+<html class=" supports-js supports-no-touch supports-csstransforms supports-csstransforms3d supports-fontface supports-pointerevents" style="">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+
+<!--<![endif]-->
+
+
+     <link rel="stylesheet" href="./index_files/font-awesome.min.css">
+    <!-- Basic page needs ================================================== -->
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="./index_files/style-main.css">
+    <link href="./index_files/css" rel="stylesheet">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <style type="text/css">
+
+    
+    @font-face {
+        font-family: "Gill Sans";
+        src: url(Gill-sans.TTF);
+    }
+    body, input, textarea, button, select {
+        font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif;
+    }
+    #demo div p {
+        color: #e79600;
+        line-height: 46px !important;
+        font-size: 44px !important;
+        margin-right: 5px !important;
+    }
+
+    #demo div p span {
+        padding-right: 6px;
+    }
+  #demo2 div p {
+        color: #e79600;
+        line-height: 46px !important;
+        font-size: 44px !important;
+        margin: 5px !important;
+        margin-bottom: 10px;
+    }
+
+    #demo2 div p span {
+        padding-right: 6px;
+    }
+    .one {
+        font-family: 'PT Sans', sans-serif;
+        line-height: 18px;
+        font-size: 18px;
+        color: #e79600;
+        font-weight: 400;
+        margin-bottom: 10px !important;
+    }
+
+    .timerA {
+        display: block;
+        padding: 17px 0 0px 0 !important;
+        height: 140px;
+    }
+
+    .image,
+    .images {
+
+        cursor: pointer;
+    }
+
+    .popup {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: none;
+        text-align: center;
+    }
+
+    .popup_bg {
+        background: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .popup_img {
+        position: relative;
+        margin: 0 auto;
+        z-index: 2;
+        max-height: 94%;
+        max-width: 94%;
+        margin: 1% 0 0 0;
+    }
+
+    #demo div {
+        display: inline-block;
+        font-size: 1.3em;
+        font-weight: bold;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    #demo div p {
+        font-size: 2.3em;
+    }
+
+    #demo p {
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 1.5em;
+        margin-bottom: 10px !important;
+    }
+
+    #demo p.one {
+        margin-bottom: 10px !important;
+        font-weight: bold;
+    }
+
+    #demo h5 {
+        font-weight: 100;
+        font-size: 0.8em;
+    }
+
+    #demo2 div {
+        display: inline-block;
+        font-size: 1.3em;
+        font-weight: bold;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    #demo2 div p {
+        font-size: 2.3em;
+    }
+
+    #demo2 p {
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 1.5em;
+    }
+
+    #demo2 h5 {
+        font-weight: 100;
+        font-size: 0.8em;
+        color: #e79600;
+    }
+
+    .template-a .short-text {
+        
+        max-width: 660px;
+    margin: auto;
+    font-size: 18px !important;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 52px;
+    font-family: 'PT Sans', sans-serif !important;
+    }
+    
+.template-a.guarantee .text__item {
+    font-family: 'PT Sans', sans-serif !important;
+}
+.template-a .shablon__four .item .text__item {
+         font-family:sans-serif !important;
+}
+.template-a.advantages .advantage .advantage__text p {
+   font-family: 'PT Sans', sans-serif !important;
+}
+.advantage__text .text-center p {
+font-family: 'PT Sans', sans-serif !important;
+}
+.stars{
+        height: 27px;
+
+}
+.template-a .caption {
+
+    font-size: 40px;
+    font-weight: 400;
+    padding-top: 46px;
+    margin-bottom: 45px;
+    text-transform: inherit;
+    letter-spacing: 0;
+}
+.template-a {
+            font-family: 'PT Sans', sans-serif !important;
+        }
+.block {
+    padding: 10px 10px 0;
+}
+.star {
+    font-size: 14px;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+    .pr_f .product-single__price span{
+                    font-weight: 600;
+                    letter-spacing: -2px
+                }
+    
+                .pr_f .product-single__price--compare-at span {
+                    letter-spacing: -2px
+                    
+                }
+                .pr_f{
+                    font-size: 30px;
+                }
+.fa-star:before {
+    content: "\f005";
+    font-family: FontAwesome !important;
+}
+    </style>
+
+    <!-- Title and description ================================================== -->
+    <title>
+        Best Vegetable Slicer 2018
+    </title>
+ 
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="theme-color" content="#1c1d1d">
+    <!-- CSS ================================================== -->
+    <link href="./index_files/timber.scss.css@4441287049243645893.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./index_files/theme.scss.css@4441287049243645893.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./index_files/template-a.css@4441287049243645893.css" rel="stylesheet" type="text/css" media="all">
+    <link href="./index_files/css@family=montserrat_3a400.css" rel="stylesheet" type="text/css" media="all">
+    <!-- Sections ================================================== -->
+    
+    <style media="all">
+    .additional-checkout-button {
+        border: 0 !important;
+        border-radius: 5px !important;
+        display: inline-block;
+        margin: 0 0 10px;
+        padding: 0 24px !important;
+        max-width: 100%;
+        min-width: 150px !important;
+        line-height: 44px !important;
+        text-align: center !important
+    }
+
+    .additional-checkout-button+.additional-checkout-button {
+        margin-left: 10px
+    }
+
+    .additional-checkout-button:last-child {
+        margin-bottom: 0
+    }
+
+    .additional-checkout-button span {
+        font-size: 14px !important
+    }
+
+    .additional-checkout-button img {
+        display: inline-block !important;
+        height: 1.3em !important;
+        margin: 0 !important;
+        vertical-align: middle !important;
+        width: auto !important
+    }
+
+    @media (max-width: 500px) {
+        .additional-checkout-button {
+            display: block;
+            margin-left: 0 !important;
+            padding: 0 10px !important;
+            width: 100%
+        }
+    }
+
+    .additional-checkout-button--apple-pay {
+        background-color: #000 !important;
+        color: #fff !important;
+        display: none;
+        font-family: -apple-system, &#39;
+        Helvetica Neue&#39;
+        ,
+        sans-serif !important;
+        min-width: 150px !important;
+        white-space: nowrap !important
+    }
+
+    .additional-checkout-button--apple-pay:hover,
+    .additional-checkout-button--apple-pay:active,
+    .additional-checkout-button--apple-pay:visited {
+        color: #fff !important;
+        text-decoration: none !important
+    }
+
+    .additional-checkout-button--apple-pay .additional-checkout-button__logo {
+        background: -webkit-named-image(apple-pay-logo-white) center center no-repeat !important;
+        background-size: auto 100% !important;
+        display: inline-block !important;
+        vertical-align: middle !important;
+        width: 3em !important;
+        height: 1.3em !important
+    }
+
+    @media (max-width: 500px) {
+        .additional-checkout-button--apple-pay {
+            display: none
+        }
+    }
+
+    .additional-checkout-button--paypal-express {
+        background-color: #ffc439 !important
+    }
+
+    .additional-checkout-button--paypal {
+        vertical-align: top;
+        line-height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important
+    }
+
+    .additional-checkout-button--amazon {
+        background-color: #fad676 !important;
+        position: relative !important
+    }
+
+    .additional-checkout-button--amazon .additional-checkout-button__logo {
+        -webkit-transform: translateY(4px) !important;
+        transform: translateY(4px) !important
+    }
+
+    .additional-checkout-button--amazon .alt-payment-list-amazon-button-image {
+        max-height: none !important;
+        opacity: 0 !important;
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important
+    }
+
+    .additional-checkout-button-visually-hidden {
+        border: 0 !important;
+        clip: rect(0, 0, 0, 0) !important;
+        clip: rect(0 0 0 0) !important;
+        width: 1px !important;
+        height: 1px !important;
+        margin: -2px !important;
+        overflow: hidden !important;
+        padding: 0 !important;
+        position: absolute !important
+    }
+    </style>
+    
+    
+ <style>#looxReviews {float:none;clear:both;}#looxReviews:before, #looxReviews:after {content:" ";visibility:hidden;display:block;height:0;clear:both;}</style>
+
+
+<!-- Facebook Pixel Code -->
+<script>
+ !function(f,b,e,v,n,t,s)
+ {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+ n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+ if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+ n.queue=[];t=b.createElement(e);t.async=!0;
+ t.src=v;s=b.getElementsByTagName(e)[0];
+ s.parentNode.insertBefore(t,s)}(window, document,'script',
+ 'https://connect.facebook.net/en_US/fbevents.js');
+ fbq('init', '385533875273010');
+ fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+ src="https://www.facebook.com/tr?id=385533875273010&ev=PageView&noscript=1
+https://www.facebook.com/tr?id=385533875273010&ev=PageView&noscript=1
+"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+</head>
+
+<body id="land-diaper-bag" class="template-product">
+    <div id="NavDrawer" class="drawer drawer--left">
+        <div id="shopify-section-drawer-menu" class="shopify-section">
+            <div data-section-id="drawer-menu" data-section-type="drawer-menu-section">
+                <div class="drawer__fixed-header">
+                    <div class="drawer__header">
+                        <div class="drawer__close drawer__close--left">
+                            <button type="button" class="icon-fallback-text drawer__close-button js-drawer-close">
+                                <span class="icon icon-x" aria-hidden="true"></span>
+                                <span class="fallback-text">Close menu</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="drawer__inner">
+                    <!-- begin mobile-nav -->
+                    <ul class="mobile-nav">
+                        <li class="mobile-nav__item">
+                            <a href="#shopify-section-template-a" class="mobile-nav__link">Home</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="#video" class="mobile-nav__link">Video</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="#features" class="mobile-nav__link">Features</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="#reviews" class="mobile-nav__link">Reviews</a>
+                        </li>
+                        <li class="mobile-nav__item">
+                            <a href="#order" class="mobile-nav__link">Order</a>
+                        </li>
+                        <li class="mobile-nav__spacer"></li>
+                    </ul>
+                    <!-- //mobile-nav -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="CartDrawer" class="drawer drawer--right drawer--has-fixed-footer">
+        <div class="drawer__fixed-header">
+            <div class="drawer__header">
+                <div class="drawer__title">Your cart</div>
+                <div class="drawer__close">
+                    <button type="button" class="icon-fallback-text drawer__close-button js-drawer-close">
+                        <span class="icon icon-x" aria-hidden="true"></span>
+                        <span class="fallback-text">Close Cart</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="drawer__inner">
+            <div id="CartContainer" class="drawer__cart"></div>
+        </div>
+    </div>
+    <div id="PageContainer" class="page-container">
+        <div id="shopify-section-header" class="shopify-section">
+            <style>
+            .site-header__logo img {
+                max-width: 180px;
+            }
+
+            @media screen and (max-width: 768px) {
+                .site-header__logo img {
+                    max-width: 100%;
+                }
+            }
+            </style>
+            <div data-section-id="header" data-section-type="header-section" data-template="product">
+                <div class="header-wrapper">
+                    <header class="site-header" role="banner">
+                        <div class="wrapper">
+                            <div class="grid--full grid--table">
+                                <div class="grid__item large--hide one-quarter">
+                                    <div class="site-nav--mobile">
+                                        <button type="button" class="icon-fallback-text site-nav__link js-drawer-open-left" aria-controls="NavDrawer" aria-expanded="false">
+                                            <span class="icon icon-hamburger" aria-hidden="true"></span>
+                                            <span class="fallback-text">Site navigation</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="grid__item large--one-third medium-down--one-half">
+                                    <div class="h1 site-header__logo large--left" itemscope="" itemtype="http://schema.org/Organization">
+                                        
+                                    </div>
+                                </div>
+                                <div class="grid__item large--two-thirds large--text-right medium-down--hide">
+                                    <!-- begin site-nav -->
+                                    <ul class="site-nav site-nav--init" id="AccessibleNav">
+                                        <li class="site-nav__item site-nav--compress__menu">
+                                            <button type="button" class="icon-fallback-text site-nav__link site-nav__link--icon js-drawer-open-left" aria-controls="NavDrawer" aria-expanded="false">
+                                                <span class="icon icon-hamburger" aria-hidden="true"></span>
+                                                <span class="fallback-text">Site navigation</span>
+                                            </button>
+                                        </li>
+                                        <li class="site-nav__item site-nav__expanded-item">
+                                            <a href="#shopify-section-template-a" class="site-nav__link">Home</a>
+                                        </li>
+                                        <li class="site-nav__item site-nav__expanded-item">
+                                            <a href="#video" class="site-nav__link">Video</a>
+                                        </li>
+                                        <li class="site-nav__item site-nav__expanded-item">
+                                            <a href="#features" class="site-nav__link">Features</a>
+                                        </li>
+                                        <li class="site-nav__item site-nav__expanded-item">
+                                            <a href="#reviews" class="site-nav__link">Reviews</a>
+                                        </li>
+                                        <li class="site-nav__item site-nav__expanded-item">
+                                            <a href="#order" class="site-nav__link">Order</a>
+                                        </li>
+                                    </ul>
+                                    <!-- //site-nav -->
+                                </div>
+                                <div class="grid__item large--hide one-quarter">
+                                    <div class="site-nav--mobile text-right">
+                                        <a href="#" class="site-nav__link cart-link js-drawer-open-right" aria-controls="CartDrawer" aria-expanded="false">
+                <span class="icon-fallback-text">
+                  
+                 
+                </span>
+                <span class="cart-link__bubble"></span>
+              </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <main class="main-content" role="main">
+            <div class="wrapper">
+                <!-- /templates/product.liquid -->
+                <div id="shopify-section-template-a" class="shopify-section">
+                    <!-- /templates/product.liquid -->
+                    <div itemscope="" itemtype="http://schema.org/Product" class="template-a" id="ProductSection" data-section-id="template-a" data-section-type="product-template" data-image-zoom-type="false" data-enable-history-state="true">
+                        <h1 class="text-center a-header-product">Best Vegetable Slicer 2018</h1>
+                        <h2 class="product-single__title text-center" itemprop="name">Manual Mandoline Slicer With 3 Round Stainless Steel Blades</h2>
+                        <div itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
+                            <meta itemprop="ratingValue" content="4.8">
+                            <meta itemprop="ratingCount" content="4">
+                        </div>
+                        <div itemscope="" itemtype="http://schema.org/Product">
+                            <meta itemprop="url" content="https://funtico.net/products/land-diaper-bag">
+                            <meta itemprop="image" content="//cdn.shopify.com/s/files/1/2017/5571/products/product-image-349614466_grande.jpg?v=1501856102">
+                            <div class="grid product-single product-block">
+                                <div class="grid__item large--six-twelfths text-center">
+                                    <div class="product-single__photos">
+                                        <div class="product-single__photo-wrapper">
+                                            <div class="best-seller">
+                                                <span class="text-center">Best Seller</span>
+                                            </div>
+                                            <img class="product-single__photo image" id="ProductPhotoImg" src="./index_files/product-image-349614466_600x_402x.jpg@v=1501856102.jpg" alt="LAND Diaper Bag" data-image-id="19590302731">
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                                <div class="grid__item product-single__meta--wrapper large--six-twelfths">
+                                    <div class="timer-block">
+                                        <div class="free-shipping">
+                                            <img src="./index_files/discount.png" alt="">
+                                        </div>
+                                        <div class="timerA timerAtop">
+                                            <div id="demo" style="height: auto; color: orange;"><p class="one">Hurry up! Sale Ends in</p><div><p>00</p><h5>DAYS</h5></div> <div><p><span>:</span>00</p><h5>HRS</h5></div> <div><p><span>:</span>59</p><h5>MINS</h5> </div> <div><p><span>:</span>41</p><h5> SECS </h5> </div> </div>
+                                            <div class="text">
+                                            	<div id="bk-stock-countdown">
+        <div> <div class="stock-countdown-message"> <div class="message"><p style="text-align: left;" color="#4f5154"><span style="font-size: 18px;"><font face="Arial">Only 7 items left in stock!</font></span></p><!--v-html--></div> <!--v-if--> </div> <div class="progress-bar blue stripes" style="background: rgb(189, 195, 199);"> <span style="background: rgb(241, 196, 15); width: 5%;"></span> </div><!--v-if--> </div><!--v-component-->
+      </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-single__meta">
+                                        <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                            <div class="prices pr_f">
+                                                <span class="product-single__price on-sale">
+               <span class="price_only5433">169</span>
+                                                <span class="price_currency">AED</span>
+                                                </span>
+                                                
+                                                <span class="product-single__price--wrapper">
+                  <span class="product-single__price--compare-at">
+                    
+                      <span class="price_old5433">282</span>
+                                                <span class="price_currency">AED</span>
+                                                </span>
+                                                </span>
+                                                
+                                            </div>
+                                            <meta itemprop="priceCurrency" content="EUR">
+                                             
+                                            <div class="timer-mobile"></div>
+                                            <form action="send.php" method="post"  id="form**" class="product-single__form AddToCartForm">
+                                                <div class="product-single__add-to-cart">
+                                                    <input type="hidden" name="subid1" class="subid1">
+<input type="hidden" name="subid2" class="subid2">
+<input type="hidden" name="subid3" class="subid3">
+<input type="text" name="name" required="" placeholder="Enter your name" style="border: 2px solid #28b75b;margin:  0;text-align: center;width: 100%;font-size: 1.2em;font-family: &#39;PT Sans&#39;" class="-metrika-nokeys">
+                                                    <input type="text" name="phone" required="" placeholder="Enter your phone" id="phone1" style="border: 2px solid #28b75b;margin: 10px 0; text-align: center;width: 100%;font-size: 1.2em;font-family: &#39;PT Sans&#39;" class="-metrika-nokeys">
+                                                    <button type="submit" name="add" id="" class="btn AddToCart">
+                                                        <span id="AddToCartText" class="">
+                    
+                     Order Now
+                    
+                  </span>
+                                                    </button>
+                                                </div>
+                                                <!-- <div class="radio-wrapper js product-form__item"> -->
+                                                    <!-- <label class="single-option-radio__label" for="ProductSelect-option-0"> -->
+                                                        <!-- Color -->
+                                                    <!-- </label> -->
+                                                    <!-- <fieldset class="single-option-radio" name="Color" id="ProductSelect-option-0"> -->
+                                                        <!-- <input type="radio" checked="checked" value="Pink" data-index="option1" name="Color" class="single-option-selector__radio" id="ProductSelect-option-color-Pink"> -->
+                                                        <!-- <label class="header__color header__input" for="ProductSelect-option-color-Pink" style="border-color:Pink;"> -->
+                                                            <!-- <div class="color" style="border:2px solid gray;background:Pink;"></div> -->
+                                                            <!-- <div class="color-text" style="display:inline-block;" style="color:Pink;"> -->
+                                                                <!-- Pink -->
+                                                            <!-- </div> -->
+                                                        <!-- </label> -->
+                                                        <!-- <input type="radio" value="Red" data-index="option1" name="Color" class="single-option-selector__radio" id="ProductSelect-option-color-Red"> -->
+                                                        <!-- <label class="header__color header__input" for="ProductSelect-option-color-Red"> -->
+                                                            <!-- <div class="color" style="border:2px solid gray;background:Red;"></div> -->
+                                                            <!-- <div class="color-text"> -->
+                                                                <!-- Red -->
+                                                            <!-- </div> -->
+                                                        <!-- </label> -->
+                                                        <!-- <input type="radio" value="Blue" data-index="option1" name="Color" class="single-option-selector__radio" id="ProductSelect-option-color-Blue"> -->
+                                                        <!-- <label class="header__color header__input" for="ProductSelect-option-color-Blue"> -->
+                                                            <!-- <div class="color" style="border:2px solid gray;background:Blue;"></div> -->
+                                                            <!-- <div class="color-text"> -->
+                                                                <!-- Blue -->
+                                                            <!-- </div> -->
+                                                        <!-- </label> -->
+                                                <!-- </div> -->
+                                                <select name="id" id="ProductSelect" class="product-single__variants no-js">
+                                                    <option selected="selected" data-sku="7540917-orange-pink" value="1877216133131">
+                                                        Pink - 
+                                                          EUR
+                                                    </option>
+                                                    <option data-sku="7540917-red" value="1877216100363">
+                                                        Red - 
+                                                          EUR
+                                                    </option>
+                                                    <option data-sku="7540917-navy-blue" value="1877216165899">
+                                                        Blue - 
+                                                          EUR
+                                                    </option>
+                                                    <option data-sku="7540917-pink-grey" value="1877216198667">
+                                                        Grey - 
+                                                          EUR
+                                                    </option>
+                                                    <option data-sku="7540917-blue-green" value="1877216231435">
+                                                        Green - 
+                                                          EUR
+                                                    </option>
+                                                </select>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--full product-single">
+                                <div class="short-text" style="display: none">
+                                    Quickly and easily transforming large quantities of vegetables and fruit into delicious and healthy spaghetti-style spirals, it leaves hardly any waste left behind and requires almost no effort to use thanks to its clever screw system and easy-turn handle. Suitable for both left- and right-handed users, it comes with two interchangeable cutting cones to produce ribbons or spirals. And because everything is spiralized straight into the large container, there’s no mess left on your worktop either. It works really well with carrots, courgettes, potatoes, apples, pears etc. Clean-up’s easy too, as all the parts can go in the dishwasher.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="template-a advantages" style="background-image:url(family-1511514361448.jpg@17103660596312785456.jpg);" id="advantages">
+                <div class="bg"></div>
+                <div class="content wrapper">
+                    <div class="grid--full">
+                        <h2 class="caption text-center">Advantages</h2>
+                    </div>
+                    <div class="grid--full">
+                        <div class="grid__item large--one-third medium--one-half small--one-half">
+                            <div class="advantage">
+                                <div class="advantage__img">
+                                    <img src="./index_files/htb1pprhpfxxxxa3axxxq6xxfxxxf-1511516714961.jpg@17318978455007377947.jpg">
+                                </div>
+                                <div class="advantage__text text-center" style="height: 60px;">
+                                    <p>High efficiency, one handle circle equals to cut 12 times.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__item large--one-third medium--one-half small--one-half">
+                            <div class="advantage">
+                                <div class="advantage__img">
+                                    <img src="./index_files/htb1p1_2pfxxxxxpxxxxq6xxfxxxe-1511516715044.jpg@12461917602391274464.jpg">
+                                </div>
+                                <div class="advantage__text text-center" style="height: 60px;">
+                                    <p>Strong sharp stainless steel blades.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__item large--one-third medium--one-half small--one-half">
+                            <div class="advantage">
+                                <div class="advantage__img">
+                                    <img src="./index_files/htb1qvzkpfxxxxcnxpxxq6xxfxxxd-1511515574325.jpg@7682994660079716849.jpg">
+                                </div>
+                                <div class="advantage__text text-center" style="height: 60px;">
+                                    <p>High speed cheese slicer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--       </div> -->
+                        <!--        <div class="gridfull"> -->
+                        <div class="grid__item  large--one-third medium--one-half push--large--one-sixth small--one-half">
+                            <div class="advantage">
+                                <div class="advantage__img">
+                                    <img src="./index_files/61kzihbq9dl._sy355_-1511516936407.jpg@17956839304973200381.jpg">
+                                </div>
+                                <div class="advantage__text text-center" style="height: 40px;">
+                                    <p>Easy to clean.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__item  large--one-third medium--one-whole push--large--one-sixth small--one-whole lastblock">
+                            <div class="advantage">
+                                <div class="advantage__img">
+                                    <img src="./index_files/product-image-349614492_600x_402x-1511516715005.jpg@12461917602391274464.jpg">
+                                </div>
+                                <div class="advantage__text text-center" style="height: 40px;">
+                                    <p>Safe, keep your hands away.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-description wrapper template-a">
+                <div class="grid">
+                    <h2 class="caption text-center">
+          		Look how it works!
+          	</h2>
+                </div>
+                <div class="grid" id="video">
+                    <div class="grid__item large--two-thirds push--large--one-sixth">
+                        <div class="video-wrapper">
+
+
+                            
+    <iframe width="620" height="345" src="https://www.youtube.com/embed/s6oy3w8xXUg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="description__product template-a" id="gallery">
+                <div class="bg_gradient"></div>
+                <div class="wrapper">
+                    <div class="grid ">
+                        <h2 class="caption text-center">Gallery</h2>
+                    </div>
+                    <!-- <div class="shablon__one grid--full"> -->
+                        <!-- <div class="grid large"> -->
+                            <!-- <div class="grid__item"><img src=" -->
+
+<!-- https@cdn.shopify.com/s/files/1/2017/5571/t/12/assets/1-1511776556672.jpg@7569211958235831149.jpg" alt="" class="large__img"></div> -->
+                        <!-- </div> -->
+                        <!-- <div class="grid medium"> -->
+                            <!-- <div class="grid__item one-half medium-down--one-whole"><img src=" -->
+
+<!-- https@cdn.shopify.com/s/files/1/2017/5571/t/12/assets/44-1511776873615.jpg@5630867224846929839.jpg" alt="" class="medium__img"></div> -->
+                            <!-- <div class="grid__item one-half medium-down--one-whole"><img src=" -->
+
+<!-- https@cdn.shopify.com/s/files/1/2017/5571/t/12/assets/555-1511776972251.jpg@18423751492604716155.jpg" alt="" class="medium__img"></div> -->
+                        <!-- </div> -->
+                    <!-- </div> -->
+                    <!-- <hr class="gray__line"> -->
+                    <div class="shablon__four">
+                        <div class="grid">
+                            <div class="grid__item large--one-third">
+                                <div class="item">
+                                    <img src="./index_files/htb16jwfesbi8kjjy1zdq6ze1vxau-1511520481676.jpg@3953595867491218174.jpg" alt="">
+                                    <span class="text__item">Blades are made from 430 stainless steel, solid and durable, not rust and safe.</span>
+                                </div>
+                            </div>
+                            <div class="grid__item large--one-third">
+                                <div class="item">
+                                    <img src="./index_files/htb16wh0edni8kjjsszgq6a8apxar-1511520481681.jpg@15951947606970884674.jpg" alt="">
+                                    <span class="text__item">Best for grating cheese, fruits, carrots, potatoes, radish, cauliflowers ricer, nuts, chocolate, cabbages etc.</span>
+                                </div>
+                            </div>
+                            <div class="grid__item large--one-third">
+                                <div class="item">
+                                    <img src="./index_files/land-1511520481671.jpg@15951947606970884674.jpg" alt="">
+                                    <span class="text__item">The best device for cutting cheese. Make the cooking simple and easy.</span>
+                                </div>
+                            </div>
+                            <div class="grid__item large--one-third">
+                                <div class="item">
+                                    <img src="./index_files/htb159_4aafb_ujksnfoq6z_epxat-1511520481702.jpg@15951947606970884674.jpg" alt="">
+                                    <span class="text__item">3 easily interchangeable drum blades for different cooking choice, including fine, coarse grating and slicing.</span>
+                                </div>
+                            </div>
+                            <div class="grid__item large--one-third">
+                                <div class="item">
+                                    <img src="./index_files/htb1ve7qev6h8kjjsspmq6z2wxxae-1511520481694.jpg@15951947606970884674.jpg" alt="">
+                                    <span class="text__item">Much safer slicer, you don't need to worry about hurting your fingers any more.</span>
+                                </div>
+                            </div>
+                            <div class="grid__item large--one-third">
+                                <div class="item">
+                                    <img src="./index_files/htb14snwedti8kjjssphq6afppxau-1511524655863.jpg@4972733974770654779.jpg" alt="">
+                                    <span class="text__item">Easy to operate and convenient to wash and clean.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="template-a" id="ProductSectionFooter" data-section-id="template-a" data-section-type="product-template">
+                    <h2 class="product-single__title text-center" itemprop="name">Manual Mandoline Slicer With 3 Round Stainless Steel Blades</h2>
+                    <div>
+                        <div class="grid product-single product-block">
+                            <div class="grid__item large--six-twelfths text-center">
+                                <div class="product-single__photos">
+                                    <div class="product-single__photo-wrapper">
+                                        <div class="best-seller">
+                                            <span class="text-center">Best Seller</span>
+                                        </div>
+                                        <img class="product-single__photo-footer images" id="ProductPhotoImgFooter" src="./index_files/product-image-349614466_600x_402x.jpg@v=1501856102.jpg" alt="LAND Diaper Bag">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="order" class="grid__item product-single__meta--wrapper large--six-twelfths">
+                                <div class="timer-block">
+                                    <div class="free-shipping">
+                                        <img src="./index_files/discount.png" alt="">
+                                    </div>
+                                    <div class="timerA  timerAFooter">
+                                        <div id="demo2" style="height: 130px; color: orange"><p class="one">Hurry up! Sale Ends in</p><div><p>00</p><h5>DAYS</h5></div> <div><p><span>:</span>00</p><h5>HRS</h5></div> <div><p><span>:</span>59</p><h5>MINS</h5> </div> <div><p><span>:</span>41</p><h5> SECS </h5> </div> </div>
+                                    </div>
+                                </div>
+                                <div class="product-single__meta">
+                                    <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                        <div class="prices pr_f">
+                                            <span class="product-single__price on-sale" style="text-decoration: inherit; display: inline-block; margin-right: 3px; font-family: Montserrat, HelveticaNeue, " helvetica="" neue="" ",="" sans-serif;="" font-size:="" 18px;="" font-weight:="" 400;"="">
+               <span class="price_only5433" style="text-decoration: inherit; display: inline-block; margin-right: 3px; font-family: Montserrat, HelveticaNeue, " helvetica="" neue",="" sans-serif;="" font-size:="" 18px;="" font-weight:="" 400;"="">169</span>
+                                            <span class="price_currency">AED</span>
+                                            </span>
+                                            
+                                            <span class="product-single__price--wrapper">
+                  <span class="product-single__price--compare-at">
+                    
+                      <span class="price_old5433">282</span>
+                                            <span class="price_currency">AED</span>
+                                            </span>
+                                            </span>
+                                            
+                                        </div>
+                                        <div class="timer-mobile"></div>
+                                        <form action="send.php" method="post"  " enctype="multipart/form-data" class="product-single__form" id="AddToCartForm">
+                                            <div class="product-single__add-to-cart">
+                                                <input type="hidden" name="subid1" class="subid1">
+<input type="hidden" name="subid2" class="subid2">
+<input type="hidden" name="subid3" class="subid3">
+<input type="text" name="name" required="" placeholder="Enter your name" style="border: 2px solid #28b75b;margin: 0; text-align: center; width: 100%;font-size: 1.2em;font-family: &#39;PT Sans&#39;" class="-metrika-nokeys">
+                                                <input type="text" name="phone" required="" placeholder="Enter your phone" id="phone" style="border: 2px solid #28b75b;margin: 10px 0;text-align: center;width: 100%;font-size: 1.2em;font-family: &#39;PT Sans&#39;" class="-metrika-nokeys">
+                                                <div>
+                                                    <button type="submit" name="add" class="btn">
+                                                        <span id="AddToCartText" class="">
+                      
+                        Order Now
+                      
+                    </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="radio-wrapper js product-form__item"> -->
+                                                <!-- <label class="single-option-radio__label" for="ProductSelect-option-0-footer"> -->
+                                                    <!-- Color -->
+                                                <!-- </label> -->
+                                                <!-- <div class="single-option-radio" name="Color" id="ProductSelect-option-0-footer"> -->
+                                                    <!-- <input type="radio" checked="checked" value="Pink" data-index="option1" name="Color" class="single-option-selector__radio" id="ProductSelect-option-color-Pink-footer"> -->
+                                                    <!-- <label class="footer__color footer__input" for="ProductSelect-option-color-Pink-footer" style="border-color:Pink;"> -->
+                                                        <!-- <div class="color" style="border:2px solid gray;background:Pink;"></div> -->
+                                                        <!-- <div class="color-text" style="display:inline-block;" style="color:Pink;"> -->
+                                                            <!-- Pink -->
+                                                        <!-- </div> -->
+                                                    <!-- </label> -->
+                                                    <!-- <input type="radio" value="Red" data-index="option1" name="Color" class="single-option-selector__radio" id="ProductSelect-option-color-Red-footer"> -->
+                                                    <!-- <label class="footer__color footer__input" for="ProductSelect-option-color-Red-footer"> -->
+                                                        <!-- <div class="color" style="border:2px solid gray;background:Red;"></div> -->
+                                                        <!-- <div class="color-text"> -->
+                                                            <!-- Red -->
+                                                        <!-- </div> -->
+                                                    <!-- </label> -->
+                                                    <!-- <input type="radio" value="Blue" data-index="option1" name="Color" class="single-option-selector__radio" id="ProductSelect-option-color-Blue-footer"> -->
+                                                    <!-- <label class="footer__color footer__input" for="ProductSelect-option-color-Blue-footer"> -->
+                                                        <!-- <div class="color" style="border:2px solid gray;background:Blue;"></div> -->
+                                                        <!-- <div class="color-text"> -->
+                                                            <!-- Blue -->
+                                                        <!-- </div> -->
+                                                    <!-- </label> -->
+                                                <!-- </div> -->
+                                            <!-- </div> -->
+                                            <select name="id" id="ProductSelect" class="product-single__variants no-js">
+                                                <option selected="selected" data-sku="7540917-orange-pink" value="1877216133131">
+                                                    Pink - 
+                                                      EUR
+                                                </option>
+                                                <option data-sku="7540917-red" value="1877216100363">
+                                                    Red - 
+                                                      EUR
+                                                </option>
+                                                <option data-sku="7540917-navy-blue" value="1877216165899">
+                                                    Blue - 
+                                                      EUR
+                                                </option>
+                                                <option data-sku="7540917-pink-grey" value="1877216198667">
+                                                    Grey - 
+                                                      EUR
+                                                </option>
+                                                <option data-sku="7540917-blue-green" value="1877216231435">
+                                                    Green - 
+                                                      EUR
+                                                </option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <hr class="gray__line">
+                    <div class="shablon__two" id="features">
+                        <div class="grid">
+                            <div class="grid__item one-half large--hide medium-down--show medium-down--one-whole">
+                                <div class="right__content">
+                                    <h4 class="title__content">Features</h4>
+                                    <div class="body__content">
+                                        <p>&nbsp;</p>
+                                        <ul>
+                                            <li>Impact-resistant, BPA-free ABS plastic frame and blade plate construction</li>
+                                            <li>Size - 9.5 x 2.7 x 4.5 inches,  weight -1.8 pounds</li>
+                                            <li>Powerful suction feet for stability with easy release tabs</li>
+                                            <li>Hand operated--no batteries or AC outlet necessary</li>
+                                            <!-- <li>Function:&nbsp;Carrying baby thing</li> -->
+                                            <!-- <li>Package: 1PC diaper bag</li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__item one-half medium-down--one-whole"><img src="./index_files/htb18l7jev2h8kjjy1zkq6xr7pxa5-1511524655858.jpg@15866108974372822490.jpg" alt="" class="left__img"></div>
+                            <div class="grid__item one-half medium-down--hide">
+                                <div class="right__content" style="margin-top: 68.5px;">
+                                    <h4 class="title__content">Features</h4>
+                                    <div class="body__content">
+                                        <p>&nbsp;</p>
+                                        <ul>
+                                             <li>Impact-resistant, BPA-free ABS plastic frame and blade plate construction</li>
+                                            <li>Size - 9.5 x 2.7 x 4.5 inches,  weight -1.8 pounds</li>
+                                            <li>Powerful suction feet for stability with easy release tabs</li>
+                                            <li>Hand operated--no batteries or AC outlet necessary</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews template-a" id="reviews">
+                <div class="bg_gradient"></div>
+                <div class="wrapper">
+                    <div class="grid ">
+                        <h2 class="caption text-center">Reviews</h2>
+                    </div>
+                    <ul>
+                        <li>
+                            <img src="./index_files/1.jpg">
+                            <h3>Ezequi
+</h3>
+                            <div class="block stars">
+                                <i class="fa star fa-star"></i>
+                                <i class="fa star fa-star"></i>
+                                <i class="fa star fa-star"></i>
+                                <i class="fa star fa-star"></i>
+                                <i class="fa star fa-star"></i>
+                            </div>
+                            <p>This is so much easier for small quantities than getting out my big food processor. I use it frequently for cheese and veggies.</p>
+                        </li>
+                        <li>
+                            <img src="./index_files/2.jpg">
+                            <h3>Cynthia K.
+</h3>
+<div class="block stars">
+                                <i class="fa star fa-star"></i>
+                                <i class="fa star fa-star"></i>
+                                <i class="fa star fa-star"></i>
+                                <i class="fa star fa-star"></i>
+                                <i class="fa star fa-star"></i>
+                            </div>
+                            <p>Love this for grating cheese. I have not used the slicer yet or the other drum, but grating cheese is a dream! No more chewed up knuckles.</p>
+                        </li>
+                        <li>
+                            <img src="./index_files/3.jpg">
+                            <h3>Liza D.
+</h3>
+                            <div class="block stars">
+                                <i class="fa star fa-star"></i>
+                                <i class="fa star fa-star"></i>
+                                <i class="fa star fa-star"></i>
+                                <i class="fa star fa-star"></i>
+                               <i class="fa star fa-star"></i>
+                            </div>
+                            <p>Love this sliced and cheese grater. I use it for everything!!!! Grating cheese is now done in a few minutes and slicing carrots, cucumber, onions and so many other options for salads takes no effort whatsoever. Highly recommend!!!</p>
+                        </li>
+                        <li>
+                            <img src="./index_files/4.jpg">
+                            <h3>Gina L.
+
+</h3>
+<div class="block stars">
+                                <i class="fa star fa-star"></i>
+                                <i class="fa star fa-star"></i>
+                                <i class="fa star fa-star"></i>
+                                <i class="fa star fa-star"></i>
+                                <i class="fa star fa-star-o"></i>
+                            </div>
+                            <p>I've purchased several products like this in the past but this Mandoline Slicer is by far the best. Easy to take apart and clean. Easy to use and I love the final slices and shreds. And I happen to like turquoise too.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="guarantee template-a">
+                <div class="wrapper">
+                    <div class="grid--full">
+                        <h2 class="caption text-center">Payment and delivery</h2>
+                    </div>
+                    <div class="grid--full">
+                        <div class="grid__item large--one-quarter medium-down--one-half">
+                            <div class="img__item"><img src="./index_files/guarantee-1.png" alt=""></div>
+                            <div class="text__item"> You place an order <br>on the site
+                            </div>
+                        </div>
+                        <div class="grid__item large--one-quarter medium-down--one-half">
+                            <div class="img__item"><img src="./index_files/guarantee-2.png" alt=""></div>
+                            <div class="text__item">Our operator will call to confirm the order and find out your address
+                            </div>
+                        </div>
+                        <div class="grid__item large--one-quarter medium-down--one-half">
+                            <div class="img__item"><img src="./index_files/guarantee-3.png" alt=""></div>
+                            <div class="text__item">Your order will be quickly delivered to your address by courier
+                            </div>
+                        </div>
+                        <div class="grid__item large--one-quarter medium-down--one-half">
+                            <div class="img__item"><img src="./index_files/guarantee-4.png" alt=""></div>
+                            <div class="text__item">You receive your order and pay cash on delivery</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="template-a" id="ProductSectionFooter" data-section-id="template-a" data-section-type="product-template">
+                    <h2 class="product-single__title text-center" itemprop="name">Manual Mandoline Slicer With 3 Round Stainless Steel Blades</h2>
+                    <div>
+                        <div class="grid product-single product-block">
+                            <div class="grid__item large--six-twelfths text-center">
+                                <div class="product-single__photos">
+                                    <div class="product-single__photo-wrapper">
+                                        <div class="best-seller">
+                                            <span class="text-center">Best Seller</span>
+                                        </div>
+                                        <img class="product-single__photo-footer images" id="ProductPhotoImgFooter" src="./index_files/product-image-349614466_600x_402x.jpg@v=1501856102.jpg" alt="LAND Diaper Bag">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="order" class="grid__item product-single__meta--wrapper large--six-twelfths">
+                                <div class="timer-block">
+                                    <div class="free-shipping">
+                                        <img src="./index_files/discount.png" alt="">
+                                    </div>
+                                    <div class="timerA  timerAFooter">
+                                        <div id="demo2" style="height: 130px; color: orange"><p class="one">Hurry up! Sale Ends in</p><div><p>00</p><h5>DAYS</h5></div> <div><p><span>:</span>00</p><h5>HRS</h5></div> <div><p><span>:</span>59</p><h5>MINS</h5> </div> <div><p><span>:</span>41</p><h5> SECS </h5> </div> </div>
+                                    </div>
+                                </div>
+                                <div class="product-single__meta">
+                                    <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                        <div class="prices pr_f">
+                                            <span class="product-single__price on-sale" style="text-decoration: inherit; display: inline-block; margin-right: 3px; font-family: Montserrat, HelveticaNeue, " helvetica="" neue="" ",="" sans-serif;="" font-size:="" 18px;="" font-weight:="" 400;"="">
+               <span class="price_only5433" style="text-decoration: inherit; display: inline-block; margin-right: 3px; font-family: Montserrat, HelveticaNeue, " helvetica="" neue",="" sans-serif;="" font-size:="" 18px;="" font-weight:="" 400;"="">169</span>
+                                            <span class="price_currency">AED</span>
+                                            </span>
+                                            
+                                            <span class="product-single__price--wrapper">
+                  <span class="product-single__price--compare-at">
+                    
+                      <span class="price_old5433">282</span>
+                                            <span class="price_currency">AED</span>
+                                            </span>
+                                            </span>
+                                            
+                                        </div>
+                                        <div class="timer-mobile"></div>
+                                        <form action="send.php" method="post"  " enctype="multipart/form-data" class="product-single__form" id="AddToCartForm">
+                                            <div class="product-single__add-to-cart">
+                                                <input type="hidden" name="subid1" class="subid1">
+<input type="hidden" name="subid2" class="subid2">
+<input type="hidden" name="subid3" class="subid3">
+<input type="text" name="name" required="" placeholder="Enter your name" style="border: 2px solid #28b75b;margin: 0; text-align: center; width: 100%;font-size: 1.2em;font-family: &#39;PT Sans&#39;" class="-metrika-nokeys">
+                                                <input type="text" name="phone" required="" placeholder="Enter your phone" id="phone" style="border: 2px solid #28b75b;margin: 10px 0;text-align: center;width: 100%;font-size: 1.2em;font-family: &#39;PT Sans&#39;" class="-metrika-nokeys">
+                                                <div>
+                                                    <button type="submit" name="add" class="btn">
+                                                        <span id="AddToCartText" class="">
+                      
+                        Order Now
+                      
+                    </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="radio-wrapper js product-form__item"> -->
+                                                <!-- <label class="single-option-radio__label" for="ProductSelect-option-0-footer"> -->
+                                                    <!-- Color -->
+                                                <!-- </label> -->
+                                                <!-- <div class="single-option-radio" name="Color" id="ProductSelect-option-0-footer"> -->
+                                                    <!-- <input type="radio" checked="checked" value="Pink" data-index="option1" name="Color" class="single-option-selector__radio" id="ProductSelect-option-color-Pink-footer"> -->
+                                                    <!-- <label class="footer__color footer__input" for="ProductSelect-option-color-Pink-footer" style="border-color:Pink;"> -->
+                                                        <!-- <div class="color" style="border:2px solid gray;background:Pink;"></div> -->
+                                                        <!-- <div class="color-text" style="display:inline-block;" style="color:Pink;"> -->
+                                                            <!-- Pink -->
+                                                        <!-- </div> -->
+                                                    <!-- </label> -->
+                                                    <!-- <input type="radio" value="Red" data-index="option1" name="Color" class="single-option-selector__radio" id="ProductSelect-option-color-Red-footer"> -->
+                                                    <!-- <label class="footer__color footer__input" for="ProductSelect-option-color-Red-footer"> -->
+                                                        <!-- <div class="color" style="border:2px solid gray;background:Red;"></div> -->
+                                                        <!-- <div class="color-text"> -->
+                                                            <!-- Red -->
+                                                        <!-- </div> -->
+                                                    <!-- </label> -->
+                                                    <!-- <input type="radio" value="Blue" data-index="option1" name="Color" class="single-option-selector__radio" id="ProductSelect-option-color-Blue-footer"> -->
+                                                    <!-- <label class="footer__color footer__input" for="ProductSelect-option-color-Blue-footer"> -->
+                                                        <!-- <div class="color" style="border:2px solid gray;background:Blue;"></div> -->
+                                                        <!-- <div class="color-text"> -->
+                                                            <!-- Blue -->
+                                                        <!-- </div> -->
+                                                    <!-- </label> -->
+                                                <!-- </div> -->
+                                            <!-- </div> -->
+                                            <select name="id" id="ProductSelect" class="product-single__variants no-js">
+                                                <option selected="selected" data-sku="7540917-orange-pink" value="1877216133131">
+                                                    Pink - 
+                                                      EUR
+                                                </option>
+                                                <option data-sku="7540917-red" value="1877216100363">
+                                                    Red - 
+                                                      EUR
+                                                </option>
+                                                <option data-sku="7540917-navy-blue" value="1877216165899">
+                                                    Blue - 
+                                                      EUR
+                                                </option>
+                                                <option data-sku="7540917-pink-grey" value="1877216198667">
+                                                    Grey - 
+                                                      EUR
+                                                </option>
+                                                <option data-sku="7540917-blue-green" value="1877216231435">
+                                                    Green - 
+                                                      EUR
+                                                </option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="template-a customers">
+                <div class="bg_gradient"></div>
+                <div class="wrapper">
+                    <div id="cbb-also-bought-box"></div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="shopify-section template-a">
+                    <div>
+                        <div>
+                            <hr class="hr--clear">
+                            <div class="text-center">
+                            </div>
+                        </div>
+                    </div>
+                     
+                    <style>
+                    @media screen and (min-width: 769px) {
+                        .main-content {
+                            padding-top: 40px !important;
+                        }
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        body.template-product>div {}
+                    }
+
+                    @media screen and (max-width: 590px) {
+                        .wrapper {
+                            padding-left: 20px;
+                            padding-right: 20px;
+                        }
+                    }
+
+                    .hr--large {
+                        margin: 0 auto 60px !important;
+                    }
+
+                    .main-content {
+                        padding-bottom: 12px !important;
+                    }
+                    </style>
+                </div>
+                
+            </div>
+        </main>
+        
+        <div id="shopify-section-footer" class="shopify-section">
+            <footer class="site-footer small--text-center" role="contentinfo" style="text-align: center;color: black;">
+                <div class="wrapper">
+                    <div class="grid-uniform">
+                        <img src="./index_files/footer1.png" alt="" style="text-align: center;">
+                        <div style="clear: both;width:300px;margin:0 auto;text-align: center">
+                            &copy; Copyright. All rights reserved.<br>
+                           <a href="privacy.html"> Privacy Policy | Report  </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    
+    <script type="text/javascript" >
+    $(function() {
+        $('a[href^="#"]').click(function() {
+            var target = $(this).attr('href');
+            $('html, body').animate({ scrollTop: $(target).offset().top - 130 }, 800); //800 - длительность скроллинга в мс
+            return false;
+        });
+    });
+    </script>
+ 
+     <style type="text/css">
+         #demo, #demo2, #bk-stock-countdown {
+        display: none;
+    }
+    .template-a .timer-block {
+        background: none;
+     
+    }
+    .timerA{
+        height: 0px;
+    }
+    .template-a .timer-block{
+        margin-bottom: 0px; 
+    }
+
+    .icon icon-hamburger{
+            background: url(2.png) no-repeat;
+    height: 30px;
+    width: 34px;
+    }
+    .icon.icon-hamburger{
+            background: url(2.png) no-repeat;
+    height: 30px;
+    width: 34px;
+    }
+    .site-nav--mobile {
+
+    }
+    .supports-fontface .icon:before{
+        display: none;
+    }
+
+</style>
+
+
+
+
+
+<script type="text/javascript">
+
+     function getURLParameter(name) {
+                return decodeURI(
+                    (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search) || [, null])[1] || ''
+                );
+            }
+
+         gart1=getURLParameter('adsetname');
+         gart2=getURLParameter('adid');
+         gart3=getURLParameter('placement');
+         gart4=gart1+"_"+gart2+"_"+gart3;
+         $(".subid1").val(gart1);
+         $(".subid2").val(gart2);
+         $(".subid3").val(gart3);
+
+          $("input[name=name]").keyup(function(){
+
+                a=$(this).val();
+                $(".name1").val(a);
+                
+
+         });
+         $("input[name=phone]").keyup(function(){
+
+                b=$(this).val();
+                $(".phone1").val(b);
+                
+
+         });    
+
+</script>
+
+
+
+
+<form id="googledoc">
+    <input type="hidden" name="entry.2025682253" class="name1">
+<input type="hidden" name="entry.482065658" class="sub1" > 
+    <input type="hidden" name="entry.1042050562" class="phone1">
+</form>
+
+
+<script type="text/javascript">
+    
+
+        
+$("form").on("submit",function(){
+
+ 
+    $.ajax({
+        url:     "https://docs.google.com/forms/d/e/1FAIpQLSdVBhwRPwXm1X34zAjs8QODT9ubU1-TOLcIV47A-KirOBYAmA/formResponse", //url СЃС‚СЂР°РЅРёС†С‹ (action_ajax_form.php)
+        type:     "GET", //РјРµС‚РѕРґ РѕС‚РїСЂР°РІРєРё
+        dataType: "html", //С„РѕСЂРјР°С‚ РґР°РЅРЅС‹С…
+        data: $("#googledoc").serialize(),  // РЎРµР°СЂРёР»РёР·СѓРµРј РѕР±СЉРµРєС‚
+        success: function(response) { //Р”Р°РЅРЅС‹Рµ РѕС‚РїСЂР°РІР»РµРЅС‹ СѓСЃРїРµС€РЅРѕ
+              console.log(response);
+            //  window.location.href = "thank-you/index.html"
+
+        },
+        error: function(response) { // Р”Р°РЅРЅС‹Рµ РЅРµ РѕС‚РїСЂР°РІР»РµРЅС‹
+            //window.location.href = "thank-you/index.html"
+        }
+    });
+ 
+});
+
+
+
+</script>
+
+</body></html>

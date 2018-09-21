@@ -1,0 +1,41 @@
+@font-face {
+	font-family: 'Poppins';
+	src:url(Poppins-Regular.ttf);
+}
+.reviews h1 {
+	text-align: center;
+}
+.reviews ul {
+	width: 100%;
+	text-align: ;
+}
+.reviews ul li {
+	list-style-type: none;
+	display: inline-block;
+	width: 23%;
+	vertical-align: top;
+	background: #E8E8E8;
+	    margin: 7px;
+}
+.reviews ul li h3 {
+	padding: 0 10px 0;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Poppins';
+    text-transform: none;
+}
+.reviews ul li p {
+	    padding: 10px 10px 0;
+	        font-size: 14px;
+    line-height: 19px;
+    font-family: 'Poppins', sans-serif;
+    white-space: pre-wrap;
+}
+.template-a {
+	    font-family: 'PT Sans', sans-serif !important;
+}
+#demo .one {
+	font-family: 'PT Sans', sans-serif !important;
+	font-size: 18px !important;
+	    color: #e79600 !important;
+}
